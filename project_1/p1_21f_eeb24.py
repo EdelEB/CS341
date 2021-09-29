@@ -1,7 +1,9 @@
 '''
-Edel Barcenas
-CS 341
-DFA(Deterministic Finite Automaton) implementation
+Written by: Edel Barcenas, eeb24
+Course: CS 341
+Section Number: 003
+Instructor: Marvin Nakayama, marvin@njit.edu
+Assignment: Project 1 : DFA(Deterministic Finite Automaton) implementation
 9/20/21
 '''
 
@@ -150,14 +152,15 @@ def tester():
 def main():
     printHeader();
 
-    play = input("Do you want to input a string?(y/n): ");
-    if play == 'y':
-        string = input("Enter string over Σ: ");
-        q1(string)
-    elif play == 'n':
-        return;
-    else:
-        print("Must input 'y' or 'n'");
+    while True:
+        play = input("Do you want to input a string?(y/n): ");
+        if play == 'y':
+            string = input("Enter string over Σ: ");
+            q1(string)
+        elif play == 'n':
+            return;
+        else:
+            print("Must input 'y' or 'n'");
 
 
 #tester()
